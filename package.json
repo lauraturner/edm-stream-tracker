@@ -1,0 +1,24 @@
+{
+  "name": "edm-stream-tracker",
+  "version": "1.0.0",
+  "description": "Tracking live edm streams",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauraturner/edm-stream-tracker.git"
+  },
+  "author": "Laura Turner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lauraturner/edm-stream-tracker/issues"
+  },
+  "homepage": "https://github.com/lauraturner/edm-stream-tracker#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "google-spreadsheet": "^3.0.11",
+    "mongo": "^0.1.0"
+  }
+}
