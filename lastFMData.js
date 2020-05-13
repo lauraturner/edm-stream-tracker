@@ -20,7 +20,7 @@ function getTags(tags) {
 function getImage(images) {
     let imgLink = null;
     images.forEach(image => {
-        if (image.size === 'large') {
+        if (image.size === 'large' && image["#text"] !== '') {
             imgLink = image["#text"];
         }
     });
