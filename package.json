@@ -1,24 +1,32 @@
 {
-  "name": "edm-stream-tracker",
-  "version": "1.0.0",
-  "description": "Tracking live edm streams",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lauraturner/edm-stream-tracker.git"
-  },
-  "author": "Laura Turner",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lauraturner/edm-stream-tracker/issues"
-  },
-  "homepage": "https://github.com/lauraturner/edm-stream-tracker#readme",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "google-spreadsheet": "^3.0.11",
-    "mongo": "^0.1.0"
-  }
+    "name": "edm-stream-tracker",
+    "version": "1.0.0",
+    "description": "Tracking live edm streams",
+    "main": "scrapeStreams.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lauraturner/edm-stream-tracker.git"
+    },
+    "author": "Laura Turner",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lauraturner/edm-stream-tracker/issues"
+    },
+    "homepage": "https://github.com/lauraturner/edm-stream-tracker#readme",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "bluebird": "^3.7.2",
+        "bufferutil": "^4.0.1",
+        "cheerio": "^1.0.0-rc.3",
+        "cheerio-tableparser": "^1.0.1",
+        "dotenv": "^8.2.0",
+        "mongo": "^0.1.0",
+        "puppeteer": "^3.0.4",
+        "request": "^2.88.2",
+        "request-promise": "^4.2.5",
+        "utf-8-validate": "^5.0.2"
+    }
 }
