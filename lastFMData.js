@@ -18,12 +18,13 @@ function getTags(tags) {
 }
 
 function getImage(images) {
+    let imgLink = null;
     images.forEach(image => {
         if (image.size === 'large') {
-            return image["#text"];
+            imgLink = image["#text"];
         }
     });
-    return null;
+    return imgLink;
 }
 
 function addData(data, streamData) {

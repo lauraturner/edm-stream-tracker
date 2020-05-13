@@ -15,11 +15,12 @@ function parseDate(date) {
 
 function formatJson(data, row) {
     let start = parseDate(data[0][row]);
+    let artist = data[2][row].replace(/ *\([^)]*\) */g, "");
     let streamData = {
         start: start,
         event: data[1][row],
-        artist: data[2][row],
-        platform: (data[3][row] === '') ? data[3][row] : null,
+        artist: artist,
+        platform: (data[3][row] === '') ? null : data[3][row],
         link: data[4][row],
         tags: [],
         img: null,
